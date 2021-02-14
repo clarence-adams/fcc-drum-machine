@@ -10,7 +10,7 @@ import snare1 from './audio/snareAnalog.wav'
 import kick0 from './audio/kickSynth.wav'
 import kick1 from './audio/kickAnalog.wav'
 
-// component that renders the drum pads
+// component that renders the drum pads and handles clicks and buttons
 function Pad(props) {
    useEffect(() => {
      // variable that stores the audio file passed to the drum pad
@@ -38,7 +38,7 @@ function Pad(props) {
     }
   })
 
-// event listener that removes the css styling added by the previous listener
+  // event listener that removes the active css class to the button pressed
   document.addEventListener('keyup', function() {
     document.getElementById(props.buttonId).classList.remove("active")
   })
@@ -63,6 +63,9 @@ function App() {
   return (
     <div id="drum-machine">
       <div id="drum-machine-wrapper">
+        <header id="header">
+         <h1>Drum Pad 3000</h1>
+        </header>
         <div id="inputs" class="container">
           <tr>
             <td>

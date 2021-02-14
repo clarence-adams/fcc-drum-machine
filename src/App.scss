@@ -29,23 +29,29 @@
 #drum-machine-wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 50vh;
-  width: 75vh;
+  max-width: 516px;
   border: 5px solid orange;
   background-color: slategray;
-  box-shadow: 10px 10px 10px 5px;
+  box-shadow: 5px 5px 10px 5px;
+}
+#header {
+  flex-basis: 100%;
 }
 #inputs {
   display: flex;
   flex-direction: column;
   min-width: 200px;
+  margin: 10px 10px 10px 10px;
 }
 #display {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightgrey;
   min-width: 150px;
   height: 2.0em;
+  margin: 10px 10px 10px 0px;
+  background-color: black;
+  color: orangered;
 }
