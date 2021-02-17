@@ -9,3 +9,5 @@ This is a drum pad created with the React framework. You can click drum pads or 
 https://happy-curie-b68712.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+All sounds were provided by the free sample pack at https://theproaudiofiles.com/
